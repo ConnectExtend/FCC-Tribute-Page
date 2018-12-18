@@ -1,0 +1,212 @@
+/* mobile-first based on viewport size ZZZpx (min-width) to 799px (max-width) */
+
+@import url('https://fonts.googleapis.com/css?family=Martel:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400i,700,700i');
+
+body, html {
+  font: 16px Martel, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.tribute {
+  background-color: rgba(77, 77, 77, 0.11);
+  border-radius: 6px;
+  max-width: 93vw;
+  margin: .5rem 0 0;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+/* header group */
+
+.tribute h1, .tribute h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.tribute__name--header {
+  font-size: 3.2rem;
+  margin: 10px 0;
+}
+
+.tribute__name--tagline {
+  font-size: 2rem;
+  font-style: italic;
+  margin: 5px 0 10px;
+}
+
+/* image and credit byline */
+
+.tribute__image {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.tribute__image img {
+  border: 1.5px solid black;
+  margin: 10px 10px 5px;
+  flex-basis: 90%;
+  max-width: 80vw;
+}
+
+.tribute__image--caption {
+  font-size: .9rem;
+  display: inline-flex;
+  align-self: center;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+.tribute__image--photocredit {
+  font-size: .7rem;
+  font-weight: normal;
+  padding-left: 30px;
+  padding-bottom: 3.7px;
+  align-self: flex-end;
+}
+
+/* timeline */
+
+.tribute__timeline--header {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+
+.tribute__timeline--story {
+  display: flex;
+  flex-direction: column;
+}
+
+.tribute__timeline--year {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: -8px;
+}
+
+.tribute__timeline--detail {
+  padding-bottom: 17px;
+  margin: 0 30px 0 32px;
+}
+
+/* blockquote */
+
+.tribute__blockquote {
+  flex-basis: 7em;
+  background: rgb(211, 211, 211);
+  box-shadow: 10px 5px 5px #585656;
+  padding: 0 20px;
+}
+
+.tribute__blockquote--quote {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.tribute__blockquote--citation {
+  font-family: "Lato", sans-serif;
+  color: #4a4848;
+  display: inline-flex;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+.tribute__blockquote--cite {
+  display: inline-flex;
+}
+
+#cite {
+  font-family: "Lato", sans-serif;
+  color: #4a4848;
+  font-style: italic;
+}
+
+/* link to fan website */
+
+.tribute__moreinfo {
+  margin: .6rem 0 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* hr.style13 I.Jabbari - CodePen */
+
+.style13 {
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  height: 10px;
+  max-width: 93vw;
+}
+
+.tribute__footer {
+  font: inherit;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  padding: 0 35px;
+  text-align: center;
+}
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+  body, html {
+    font-size: 18.5px;
+  }
+  .tribute {
+    max-width: 85vw;
+    margin: 1rem 0 0;
+  }
+  .tribute__image img {
+    border: 2px solid black;
+    margin: 20px 20px 7px;
+    flex-basis: 95%;
+  }
+  .tribute__image--caption {
+    padding-bottom: 10px;
+  }
+  .tribute__timeline--header {
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+  .tribute__timeline--year {
+    margin-left: 25px;
+    margin-bottom: -7px;
+  }
+  .tribute__timeline--detail {
+    margin: 0 50px 0 48px;
+  }
+  .tribute__moreinfo {
+    margin: .8rem 0 1rem;
+    line-height: 1.7;
+    font-size: 1.2rem;
+  }
+  .style13 {
+    max-width: 85vw;
+  }
+  .tribute__footer {
+    font-size: .7rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {}
