@@ -1,8 +1,7 @@
-/* mobile-first based on viewport size ZZZpx (min-width) to 799px (max-width) */
+/* mobile-first */
 
 @import url('https://fonts.googleapis.com/css?family=Martel:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:400i,700,700i');
-
 body, html {
   font: 16px Martel, serif;
   margin: 0;
@@ -209,8 +208,70 @@ body, html {
   }
 }
 
-@media screen and (min-width: 350px) and (max-width: 799px) {
+@media screen and (min-width: 300px) and (max-width: 574px) {
+  .tribute__name--header {
+    font-size: 2.3rem;
+    margin: 8px 0 5px;
+  }
+  .tribute__name--tagline {
+    font-size: 1.6rem;
+    margin: 5px 0 -5px;
+  }
+  .tribute__image--caption {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-bottom: 3px;
+  }
+  .tribute__image--photocredit {
+    font-size: .6rem;
+    padding-left: 30px;
+    padding-bottom: 3.7px;
+  }
+  .tribute__timeline {
+    text-align: center;
+  }
   .tribute__timeline--header {
-    color: blue;
-  } 
+    font-size: 1.2rem;
+    margin: 0 10px -8px;
+  }
+  .tribute__timeline--year {
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-bottom: -4px;
+  }
+  .tribute__timeline--detail {
+    font-size: .9rem;
+    margin: 0 25px 0 28px;
+  }
+  .tribute__timeline--detail:last-of-type {
+    padding: 0;
+  }
+  .tribute__blockquote {
+    margin: 0 20px;
+    padding: 0 15px;
+  }
+  .tribute__blockquote--quote {
+    font-family: "Lato", sans-serif;
+    font-size: .9rem;
+  }
+  .tribute__blockquote--citation {
+    font-family: "Lato", sans-serif;
+    font-size: .8rem;
+    display: inline-flex;
+    padding-right: 5px;
+    margin-bottom: 1px;
+  }
+  #cite {
+    font-family: "Lato", sans-serif;
+    font-size: .8rem;
+  }
+  .tribute__moreinfo {
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+  .tribute__footer {
+    font-size: .6rem;
+    margin-bottom: 1rem;
+  }
 }
