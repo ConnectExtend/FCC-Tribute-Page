@@ -209,4 +209,8 @@ body, html {
   }
 }
 
-@media screen and (min-width: 800px) {}
+@media screen and (min-width: 350px) and (max-width: 799px) {
+  .tribute__timeline--header {
+    color: blue;
+  } 
+}
