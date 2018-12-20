@@ -207,44 +207,39 @@ body, html {
 
 @media screen and (max-width: 1149px) and (min-width: 700px) {
   .tribute__name {
-    min-height: 8.5rem;
+    min-height: 7rem;
   }
   .tribute__name--header {
-    font-size: 3.7rem;
+    font-size: 3.4rem;
   }
   .tribute__name--tagline {
-    font-size: 2.3em;
-    margin: .1rem 0 .8rem;
+    font-size: 2.2em;
   }
   .tribute__image {
-    max-width: 70%;
+    max-width: 75%;
     margin: 0 auto;
+    padding: 0 25px;
   }
   .tribute__image img {
     max-width: 98%;
-    margin: 25px 20px 5px;
-    border: 1.5px solid black;
-    /* align-self: center; */
+    margin: 25px 35px 5px;
   }
   .tribute__timeline--header {
-    font-size: 1.9rem;
-    padding: 1.5rem 0 .7rem;
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem .8rem;
   }
   .tribute__timeline--story {
-    margin-left: 3.6rem;
+    margin-left: 3.9rem;
   }
   .tribute__timeline--year {
-    font-size: 1.3rem;
-    margin-bottom: -7px;
+    font-size: 1.25rem;
+    margin-bottom: -6px;
   }
   .tribute__timeline--detail {
-    font-size: 1.25rem;
-    margin: 0 3.5rem 0 1.2rem;
+    font-size: 1.35rem;
+    margin: 0 3.8rem 0 1.2rem;
   }
-  .tribute__timeline--detail:last-of-type {
-    padding-bottom: 2rem;
-  }
-  .tribute__blockquote {
+   /* .tribute__blockquote {
     padding: .7rem 0 1rem 2.1rem;
     max-width: 75%;
   }
@@ -253,10 +248,9 @@ body, html {
   }
   .tribute__blockquote--citation {
     font-size: 1.4rem;
-  }
+  } */
   .tribute__moreinfo {
-    line-height: 1.7;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -329,27 +323,3 @@ body, html {
     margin-bottom: .9rem;
   }
 }
-
-/* .tribute__blockquote--cite {
-  display: inline-flex;
-} */
-
-/* #cite {
-  font-family: "Lato", sans-serif;
-  color: #292828;
-  font-style: italic;
-} */
-
-/* .tribute__image--caption {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: .2rem;
-  align-self: center;
-}
-
-.tribute__image--photocredit {
-  font-weight: normal;
-  font-size: .8em;
-  padding: .2rem 1rem .7rem 0;
-  align-self: flex-end;
-} */
