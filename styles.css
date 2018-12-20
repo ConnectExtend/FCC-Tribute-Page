@@ -2,11 +2,11 @@
 
 /* base viewport: 350px-699px */
 
-/* larger viewport: 700px- */
+/* larger viewport: 700px-1149px */
 
 /* very small viewport: 300px-349px */
 
-/* very large viewport: 1200px+ */
+/* very large viewport: 1150px+ */
 
 @import url("https://fonts.googleapis.com/css?family=Martel:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400i,700,700i");
@@ -103,7 +103,6 @@ body, html {
 .tribute__timeline--story {
   display: flex;
   flex-direction: column;
-  font-size: 1.05rem;
   margin-left: 25px;
 }
 
@@ -114,6 +113,7 @@ body, html {
 }
 
 .tribute__timeline--detail {
+  font-size: 1.05rem;
   padding-bottom: 1.1rem;
   margin: 0 1.1rem 0 1rem;
 }
@@ -209,25 +209,86 @@ body, html {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1150px) {
   .tribute {
-    margin: 0.8rem auto;
-    /* width: 1200px; */
-    background-color: red;
+    max-width: 1150px;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .tribute__name {
+    min-height: 8em;
+  }
+  .tribute__name--header {
+    font-size: 3.5rem;
+    margin-top: 0.5rem;
+  }
+  .tribute__name--tagline {
+    font-size: 2.1em;
+    margin: 0.1rem 0 0.5rem;
+  }
+  .tribute__image {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+  .tribute__image img {
+    max-width: 98%;
+    margin: 25px 0 5px;
+    border: 2px solid black;
+    align-self: center;
+  }
+  .tribute__timeline--header {
+    font-size: 2rem;
+    padding: 1.5rem 0 0.8rem;
+  }
+  .tribute__timeline--story {
+    margin-left: 7.5em;
+  }
+  .tribute__timeline--year {
+    font-size: 1.3rem;
+    margin-bottom: -7px;
+  }
+  .tribute__timeline--detail {
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+    margin: 0 7.8rem 0 1.2rem;
+  }
+  .tribute__timeline--detail:last-of-type {
+    padding-bottom: 2.5rem;
+  }
+  .tribute__blockquote {
+    padding: 0.7rem 0 1rem 2.5rem;
+    max-width: 70%;
+  }  
+  .tribute__blockquote--quote {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }  
+  .tribute__blockquote--citation {
+    font-size: 1.4rem;
+  }
+  .tribute__moreinfo {
+    line-height: 1.7;
+    font-size: 1.6rem;
+  }
+  .style13 {
+    max-width: 1152px;
+  }
+    .tribute__footer {
+    font-size: 0.9rem;
+    margin-bottom: 0.9rem;
   }
 }
 
-/* .tribute__blockquote--cite {
+
+  /* .tribute__blockquote--cite {
   display: inline-flex;
 } */
-
-/* #cite {
+  /* #cite {
   font-family: "Lato", sans-serif;
   color: #292828;
   font-style: italic;
 } */
-
-/* .tribute__image--caption {
+  /* .tribute__image--caption {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 0.2rem;
