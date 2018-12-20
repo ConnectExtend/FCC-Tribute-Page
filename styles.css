@@ -1,15 +1,11 @@
 /* mobile-first */
-
 /* base viewport: 350px-699px */
-
 /* larger viewport: 700px-1149px */
-
-/* very small viewport: 300px-349px */
-
 /* very large viewport: 1150px+ */
 
 @import url("https://fonts.googleapis.com/css?family=Martel:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400i,700,700i");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +21,7 @@ body, html {
   /* not a flex container */
   background-color: #e5e5e5;
   border-radius: 6px;
-  margin: 0.8rem auto;
+  margin: .8rem auto;
   min-width: 325px;
   padding-bottom: 2rem;
   width: 94vw;
@@ -34,7 +30,7 @@ body, html {
 /* header group */
 
 .tribute__name {
-  min-height: 5em;
+  min-height: 5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -46,13 +42,13 @@ body, html {
 
 .tribute__name--header {
   font-size: 2.5rem;
-  margin-top: 0.2rem;
+  margin-top: .2rem;
 }
 
 .tribute__name--tagline {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-style: italic;
-  margin: 0.05rem 0 0.5rem;
+  margin: .05rem 0 .5rem;
 }
 
 /* image and credit byline */
@@ -82,13 +78,13 @@ body, html {
 .tribute__image--caption {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 0.2rem;
+  margin-top: .2rem;
 }
 
 .tribute__image--photocredit {
   font-weight: normal;
-  font-size: 0.7em;
-  padding: 0.2rem 0 .7rem 0;
+  font-size: .7em;
+  padding: .2rem 0 .7rem 0;
 }
 
 /* timeline */
@@ -96,14 +92,14 @@ body, html {
 .tribute__timeline--header {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
-  padding: 1.4rem 0.7rem 0.6rem;
+  padding: 1.4rem .7rem .6rem;
   text-align: center;
 }
 
 .tribute__timeline--story {
   display: flex;
   flex-direction: column;
-  margin-left: 25px;
+  margin-left: 1.2rem;
 }
 
 .tribute__timeline--year {
@@ -115,7 +111,7 @@ body, html {
 .tribute__timeline--detail {
   font-size: 1.05rem;
   padding-bottom: 1.1rem;
-  margin: 0 1.1rem 0 1rem;
+  margin: 0 1.2rem 0 1rem;
 }
 
 .tribute__timeline--detail:last-of-type {
@@ -128,8 +124,8 @@ body, html {
   background: #b8b8b8;
   box-shadow: 10px 5px 5px #555454;
   border-radius: 2px;
-  padding: 0.5rem 0.9rem 1rem 1.4rem;
-  max-width: 80%;
+  padding: .5rem .9rem 1rem .9rem;
+  max-width: 83%;
   margin: 0 auto;
 }
 
@@ -174,9 +170,9 @@ body, html {
 }
 
 .tribute__footer {
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-style: normal;
-  margin-bottom: 0.8rem;
+  margin-bottom: .8rem;
   padding: 0 .2rem;
   text-align: center;
 }
@@ -209,6 +205,61 @@ body, html {
   }
 }
 
+@media screen and (max-width: 1149px) and (min-width: 700px) {
+  .tribute__name {
+    min-height: 8.5rem;
+  }
+  .tribute__name--header {
+    font-size: 3.7rem;
+  }
+  .tribute__name--tagline {
+    font-size: 2.3em;
+    margin: .1rem 0 .8rem;
+  }
+  .tribute__image {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .tribute__image img {
+    max-width: 98%;
+    margin: 25px 20px 5px;
+    border: 1.5px solid black;
+    /* align-self: center; */
+  }
+  .tribute__timeline--header {
+    font-size: 1.9rem;
+    padding: 1.5rem 0 .7rem;
+  }
+  .tribute__timeline--story {
+    margin-left: 3.6rem;
+  }
+  .tribute__timeline--year {
+    font-size: 1.3rem;
+    margin-bottom: -7px;
+  }
+  .tribute__timeline--detail {
+    font-size: 1.25rem;
+    margin: 0 3.5rem 0 1.2rem;
+  }
+  .tribute__timeline--detail:last-of-type {
+    padding-bottom: 2rem;
+  }
+  .tribute__blockquote {
+    padding: .7rem 0 1rem 2.1rem;
+    max-width: 75%;
+  }
+  .tribute__blockquote--quote {
+    font-size: 1.7rem;
+  }
+  .tribute__blockquote--citation {
+    font-size: 1.4rem;
+  }
+  .tribute__moreinfo {
+    line-height: 1.7;
+    font-size: 1.6rem;
+  }
+}
+
 @media screen and (min-width: 1150px) {
   .tribute {
     max-width: 1150px;
@@ -220,11 +271,11 @@ body, html {
   }
   .tribute__name--header {
     font-size: 3.5rem;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
   }
   .tribute__name--tagline {
     font-size: 2.1em;
-    margin: 0.1rem 0 0.5rem;
+    margin: .1rem 0 .5rem;
   }
   .tribute__image {
     max-width: 65%;
@@ -238,10 +289,10 @@ body, html {
   }
   .tribute__timeline--header {
     font-size: 2rem;
-    padding: 1.5rem 0 0.8rem;
+    padding: 1.5rem 0 .8rem;
   }
   .tribute__timeline--story {
-    margin-left: 7.5em;
+    margin-left: 7.5rem;
   }
   .tribute__timeline--year {
     font-size: 1.3rem;
@@ -256,13 +307,13 @@ body, html {
     padding-bottom: 2.5rem;
   }
   .tribute__blockquote {
-    padding: 0.7rem 0 1rem 2.5rem;
+    padding: .7rem 0 1rem 2.5rem;
     max-width: 70%;
-  }  
+  }
   .tribute__blockquote--quote {
     font-size: 1.8rem;
     line-height: 1.6;
-  }  
+  }
   .tribute__blockquote--citation {
     font-size: 1.4rem;
   }
@@ -273,31 +324,32 @@ body, html {
   .style13 {
     max-width: 1152px;
   }
-    .tribute__footer {
-    font-size: 0.9rem;
-    margin-bottom: 0.9rem;
+  .tribute__footer {
+    font-size: .9rem;
+    margin-bottom: .9rem;
   }
 }
 
-
-  /* .tribute__blockquote--cite {
+/* .tribute__blockquote--cite {
   display: inline-flex;
 } */
-  /* #cite {
+
+/* #cite {
   font-family: "Lato", sans-serif;
   color: #292828;
   font-style: italic;
 } */
-  /* .tribute__image--caption {
+
+/* .tribute__image--caption {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 0.2rem;
+  margin-top: .2rem;
   align-self: center;
 }
 
 .tribute__image--photocredit {
   font-weight: normal;
-  font-size: 0.8em;
-  padding: 0.2rem 1rem 0.7rem 0;
+  font-size: .8em;
+  padding: .2rem 1rem .7rem 0;
   align-self: flex-end;
 } */
