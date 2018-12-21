@@ -19,7 +19,7 @@ body, html {
 
 .tribute {
   /* not a flex container */
-  background-color: #e5e5e5;
+  background-color: #eee;
   border-radius: 6px;
   margin: .8rem auto;
   min-width: 325px;
@@ -76,7 +76,7 @@ body, html {
 }
 
 .tribute__image--caption {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: .2rem;
 }
@@ -91,7 +91,7 @@ body, html {
 
 .tribute__timeline--header {
   font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1.4rem .7rem .6rem;
   text-align: center;
 }
@@ -99,33 +99,34 @@ body, html {
 .tribute__timeline--story {
   display: flex;
   flex-direction: column;
-  margin-left: 1.2rem;
+  margin-left: 1.4rem;
 }
 
 .tribute__timeline--year {
-  font-size: 1.1rem;
+  font-size: .9rem;
   font-weight: bold;
   margin-bottom: -5px;
 }
 
 .tribute__timeline--detail {
-  font-size: 1.05rem;
+  font-size: .9rem;
   padding-bottom: 1.1rem;
   margin: 0 1.2rem 0 1rem;
 }
 
 .tribute__timeline--detail:last-of-type {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 /* blockquote */
 
 .tribute__blockquote {
-  background: #b8b8b8;
-  box-shadow: 10px 5px 5px #555454;
+  background-color: #d2d2d2;
+  box-shadow: 10px 5px 5px #626262;
   border-radius: 2px;
-  padding: .5rem .9rem 1rem .9rem;
-  max-width: 83%;
+  padding: .5rem 1rem 1rem 1rem;
+  width: 88%;
+  max-width: 380px;
   margin: 0 auto;
 }
 
@@ -134,13 +135,13 @@ body, html {
   font-style: italic;
   font-weight: bold;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 1rem;
 }
 
 .tribute__blockquote--citation {
   font-family: "Lato", sans-serif;
-  font-size: .9rem;
+  font-size: .85rem;
   color: #383030;
 }
 
@@ -148,10 +149,10 @@ body, html {
 
 .tribute__moreinfo {
   margin: 0 auto;
-  padding: 1.7rem 0 4rem;
+  padding: 1.5rem 0 4rem;
   text-align: center;
   line-height: 1.6;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-style: normal;
 }
 
@@ -179,32 +180,6 @@ body, html {
 
 /* media queries */
 
-@media screen and (min-width: 560px) {
-  .tribute__blockquote {
-    max-width: 75%;
-  }
-}
-
-@media screen and (min-width: 595px) {
-  .tribute__blockquote--quote {
-    line-height: 1.65;
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (min-width: 635px) {
-  .tribute__blockquote {
-    max-width: 70%;
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (min-width: 670px) {
-  .tribute__blockquote {
-    max-width: 65%;
-  }
-}
-
 @media screen and (max-width: 1149px) and (min-width: 700px) {
   .tribute__name {
     min-height: 7rem;
@@ -216,7 +191,7 @@ body, html {
     font-size: 2.2em;
   }
   .tribute__image {
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 25px;
   }
@@ -224,12 +199,18 @@ body, html {
     max-width: 98%;
     margin: 25px 35px 5px;
   }
+  .tribute__image--caption {
+    font-size: 1.3rem;
+  }  
+  .tribute__image--photocredit {
+    font-size: .9em;
+  }
   .tribute__timeline--header {
     font-size: 2rem;
     padding: 1.5rem 2.5rem .8rem;
   }
   .tribute__timeline--story {
-    margin-left: 3.9rem;
+    margin-left: 3.5rem;
   }
   .tribute__timeline--year {
     font-size: 1.25rem;
@@ -239,18 +220,17 @@ body, html {
     font-size: 1.35rem;
     margin: 0 3.8rem 0 1.2rem;
   }
-   /* .tribute__blockquote {
-    padding: .7rem 0 1rem 2.1rem;
-    max-width: 75%;
+  .tribute__blockquote {
+    padding: .5rem .9rem 1rem 2.2rem;
+    width: 85%;
+    max-width: 600px;
   }
-  .tribute__blockquote--quote {
-    font-size: 1.7rem;
-  }
-  .tribute__blockquote--citation {
-    font-size: 1.4rem;
-  } */
+  .tribute__blockquote--quote, 
   .tribute__moreinfo {
     font-size: 1.5rem;
+  }
+  .tribute__blockquote--citation {
+    font-size: 1.2rem;
   }
 }
 
@@ -301,8 +281,9 @@ body, html {
     padding-bottom: 2.5rem;
   }
   .tribute__blockquote {
-    padding: .7rem 0 1rem 2.5rem;
-    max-width: 70%;
+    padding: .7rem 0 1rem 3.5rem;
+    width: 85%;
+    max-width: 750px;
   }
   .tribute__blockquote--quote {
     font-size: 1.8rem;
